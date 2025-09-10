@@ -1,22 +1,35 @@
 #include <stdio.h>
 int main() {
 	int su;
-	int a=0;
+	int id;
 	int in[100];
 	int out[100];
 	int nam[100];
+
+	printf("ìƒí’ˆ ê°œìˆ˜ ì…ë ¥ : ");
+	scanf_s("%d", &su);
 	
-	printf("»óÇ° °³¼ö ÀÔ·Â : ");
-	scanf_s("%d",&su);
-	printf("ÀÔ°í ¼ö·® ÀÔ·Â : ");
-	for (a; a < su;a++) {
+	printf("ì…ê³  ìˆ˜ëŸ‰ ì…ë ¥ : ");
+	for (int a = 0; a < su; a++) {
 		scanf_s("%d", &in[a]);
 	}
-	printf("´çÀÏ ÆÇ¸Å ¼ö·®");
-	for (a; a < su;a++) {
+	printf("ë‹¹ì¼ íŒë§¤ ìˆ˜ëŸ‰ : ");
+	for (int a = 0; a < su; a++) {
 		scanf_s("%d", &out[a]);
 	}
-	 
+	for (int a = 0; a < su; a++) {
+		nam[a] = in[a] - out[a];
+	}
+	
+	printf("ID ì…ë ¥ : ");
+	scanf_s("%d", &id);
+
+	printf("%d\n", nam[id - 1]);
+	for (int a = 0; a < su; a++) {
+		printf("%d ", nam[a]);
+		printf(" ");
+	}
+	printf("\n");
 
 	return 0;
 }
