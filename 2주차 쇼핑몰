@@ -10,14 +10,14 @@ int main() {
 	int out[100];
 	int nam[100];
 
-	printf("»óÇ° °³¼ö ÀÔ·Â : ");
+	printf("ìƒí’ˆ ê°œìˆ˜ ì…ë ¥ : ");
 	scanf_s("%d", &su);
 
-	printf("ÀÔ°í ¼ö·® ÀÔ·Â : ");
+	printf("ì…ê³  ìˆ˜ëŸ‰ ì…ë ¥ : ");
 	for (int a = 0; a < su; a++) {
 		scanf_s("%d", &in[a]);
 	}
-	printf("´çÀÏ ÆÇ¸Å ¼ö·® : ");
+	printf("ë‹¹ì¼ íŒë§¤ ìˆ˜ëŸ‰ : ");
 	for (int a = 0; a < su; a++) {
 		scanf_s("%d", &out[a]);
 	}
@@ -25,7 +25,7 @@ int main() {
 		nam[a] = in[a] - out[a];
 	}
 
-	printf("ID ÀÔ·Â : ");
+	printf("ID ì…ë ¥ : ");
 	scanf_s("%d", &id);
 
 	printf("%d\n", nam[id - 1]);
@@ -42,7 +42,7 @@ int main() {
 	}
 	pamper = ((float)gungun / pam) * 100;
 
-	printf("ÃÑ ÆÇ¸Å·® : %d(ÆÇ¸ÅÀ² : %.2f%%)", pam,pamper);
+	printf("ì´ íŒë§¤ëŸ‰ : %d(íŒë§¤ìœ¨ : %.2f%%)", pam,pamper);
 
 	return 0;
 }
